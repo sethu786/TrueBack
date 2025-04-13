@@ -6,11 +6,9 @@ const cors = require('cors')
 
 const app = express()
 app.use(express.json())
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+ 
 
 app.use(cors())
 const dbPath = path.join(__dirname, 'candidates.db')
