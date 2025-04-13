@@ -1,0 +1,18 @@
+### Add a new candidate
+POST http://localhost:3000/candidates
+Content-Type: application/json
+
+{
+  "name": "Johntur",
+  "phone": "987497890",
+  "email": "joh@example.com",
+  "gender": "Male",
+  "experience": "3 Years",
+  "skills": "JavaScript, Python"
+}
+
+### Retrieve all candidates
+GET http://localhost:3000/candidatesGet
+###
+
+DELETE http://localhost:3000/candidatesDel/10
